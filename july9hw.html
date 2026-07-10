@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Information Form</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f0f8ff;
+        }
+
+        .container{
+            width:500px;
+            margin:50px auto;
+            background:white;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 0 15px gray;
+        }
+
+        h1{
+            text-align:center;
+            color:#0066cc;
+            margin-bottom:20px;
+        }
+
+        label{
+            font-weight:bold;
+            display:block;
+            margin-top:15px;
+            margin-bottom:5px;
+        }
+
+        input[type=text],
+        input[type=date],
+        select,
+        textarea{
+            width:100%;
+            padding:10px;
+            border:1px solid #999;
+            border-radius:5px;
+        }
+
+        textarea{
+            height:80px;
+        }
+
+        .radio,
+        .check{
+            margin-top:5px;
+        }
+
+        .radio input,
+        .check input{
+            margin-right:5px;
+        }
+
+        button{
+            width:100%;
+            padding:12px;
+            margin-top:20px;
+            background:#0066cc;
+            color:white;
+            border:none;
+            border-radius:5px;
+            font-size:18px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#004c99;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Student Information Form</h1>
+
+<form>
+
+<label>Name</label>
+<input type="text" placeholder="Enter your Name">
+
+<label>Date of Birth</label>
+<input type="date">
+
+<label>Gender</label>
+
+<div class="radio">
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+<input type="radio" name="gender"> Other
+</div>
+
+<label>Technical Knowledge</label>
+
+<div class="check">
+<input type="checkbox"> Python
+<input type="checkbox"> DA
+<input type="checkbox"> HTML
+</div>
+
+<label>Country</label>
+
+<select>
+<option>Select Country</option>
+<option>India</option>
+<option>USA</option>
+<option>UK</option>
+<option>Canada</option>
+<option>Australia</option>
+</select>
+
+<label>Address</label>
+
+<textarea placeholder="Enter Address"></textarea>
+
+<button type="submit">Submit</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
